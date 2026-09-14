@@ -1,3 +1,6 @@
+// FILE: components/WhatsAppButton.jsx — Floating WhatsApp chat button (bottom-right).
+// EDIT HERE TO: change button position/colour. Phone/message come from mock.js (COMPANY.whatsapp).
+
 import React from "react";
 import { COMPANY } from "../mock";
 

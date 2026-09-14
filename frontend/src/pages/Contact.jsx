@@ -1,3 +1,6 @@
+// FILE: pages/Contact.jsx — Contact page: info cards + enquiry form (POSTs to backend /api/enquiries).
+// EDIT HERE TO: change form fields/layout. Contact details come from mock.js (COMPANY).
+
 import React, { useState } from "react";
 import { toast } from "sonner";
 import { Mail, Phone, MapPin, ArrowUpRight, Send } from "lucide-react";

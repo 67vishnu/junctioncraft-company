@@ -1,3 +1,6 @@
+// FILE: pages/ServiceDetail.jsx — Single service page: overview, scope ("what we deliver"),
+// process steps, deliverables, benefits + "Request a quote" form. Content from mock.js (SERVICES by slug).
+
 import React from "react";
 import { useParams, Link } from "react-router-dom";
 import {

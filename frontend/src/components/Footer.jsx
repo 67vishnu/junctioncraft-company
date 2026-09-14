@@ -1,3 +1,6 @@
+// FILE: components/Footer.jsx — Site footer: brand, links, services, contact, PDF download.
+// EDIT HERE TO: change footer columns/bottom text. Company info comes from mock.js (COMPANY).
+
 import React from "react";
 import { Link } from "react-router-dom";
 import { Mail, Phone, MapPin, ArrowUpRight, Download } from "lucide-react";
@@ -12,11 +15,11 @@ const Footer = () => {
           {/* Brand */}
           <div className="lg:col-span-1">
             <div className="flex items-center gap-2.5 mb-5">
-              <div className="h-11 w-11 rounded-full bg-white flex items-center justify-center overflow-hidden">
+              <div className="h-11 w-11 rounded-full bg-white flex items-center justify-center overflow-hidden ring-1 ring-white/20">
                 <img
                   src={COMPANY.logo}
                   alt="JCPL logo"
-                  className="h-full w-full object-contain"
+                  className="h-full w-full object-cover"
                 />
               </div>
               <div className="leading-none">
@@ -29,7 +32,7 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-sm text-neutral-400 leading-relaxed max-w-xs">
-              Government-approved Class-1 Electrical Contractor delivering green
+              Karnataka Government approved contractor delivering green
               energy EPC across India since {COMPANY.since}.
             </p>
           </div>
@@ -127,7 +130,7 @@ const Footer = () => {
           <p>
             © {new Date().getFullYear()} {COMPANY.legal}. All rights reserved.
           </p>
-          <p>Registered with ROC Bangalore · Class-1 Electrical Contractor, Karnataka</p>
+          <p>Registered with ROC Bangalore · Karnataka Government approved</p>
         </div>
       </div>
     </footer>

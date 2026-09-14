@@ -1,3 +1,6 @@
+// FILE: pages/ProductDetail.jsx — Single product page: overview, features, benefits,
+// applications, specs sidebar + "Request a quote" form. Content from mock.js (PRODUCTS by slug).
+
 import React from "react";
 import { useParams, Link } from "react-router-dom";
 import { ArrowLeft, ArrowUpRight, CheckCircle2, Layers } from "lucide-react";

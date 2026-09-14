@@ -1,3 +1,10 @@
+# FILE: server.py — FastAPI backend (all routes prefixed /api).
+# EDIT HERE TO:
+#   - Enquiries API: POST/GET /api/enquiries  -> stores contact & quote forms in MongoDB
+#     (collection `enquiries`). Email to jcpl@junctioncraft.in needs SMTP/API creds (see logger note).
+#   - Company Profile PDF: GET /api/company-profile.pdf -> edit build_company_profile_pdf()
+#     to change PDF content (about, stats, services, products, projects, contact).
+
 from fastapi import FastAPI, APIRouter
 from fastapi.responses import Response
 from dotenv import load_dotenv
@@ -138,7 +145,7 @@ def build_company_profile_pdf() -> bytes:
 
     story = []
     story.append(Paragraph("Junctioncraft Pvt. Ltd. (JCPL)", h1))
-    story.append(Paragraph("Green Energy EPC · Government-approved Class-1 Electrical Contractor, Karnataka · Est. 2021", sub))
+    story.append(Paragraph("Green Energy EPC · Karnataka Government-approved Electrical Contractor · Est. 2021", sub))
 
     story.append(Paragraph("About Us", h2))
     story.append(Paragraph(
@@ -149,9 +156,9 @@ def build_company_profile_pdf() -> bytes:
 
     # Key facts table
     facts = [
-        ["Highest voltage executed", "220kV"],
-        ["Lines executed", "188+ km"],
-        ["Classification", "Class-1 Electrical Contractor, Karnataka"],
+        ["Highest substation class", "765kV"],
+        ["Highest transmission line", "220kV"],
+        ["Classification", "Karnataka Government-approved Contractor"],
         ["Incorporated", "2021, ROC Bangalore"],
     ]
     t = Table(facts, colWidths=[70 * mm, 90 * mm])
@@ -170,7 +177,7 @@ def build_company_profile_pdf() -> bytes:
     story.append(t)
 
     services = [
-        "Substations — 11kV / 33kV / 110kV design, installation & commissioning",
+        "Substations — 11kV to 765kV design, installation & commissioning",
         "Electrical Line Works — 11kV & 33kV overhead lines, reconductoring & strengthening",
         "Solar EPC & Evacuation — plant BOP, 33kV/11kV evacuation lines & pooling substations",
         "Wind Power Erection — windmill assembly, erection & electrical cabling",
@@ -218,7 +225,7 @@ def build_company_profile_pdf() -> bytes:
     story.append(Paragraph("Contact", h2))
     story.append(Paragraph(
         "Email: jcpl@junctioncraft.in &nbsp;|&nbsp; Phone/WhatsApp: +91 74113 07097 "
-        "&nbsp;|&nbsp; Bengaluru, Karnataka, India", body))
+        "&nbsp;|&nbsp; Vijayapura, Karnataka, India", body))
 
     doc.build(story)
     buf.seek(0)

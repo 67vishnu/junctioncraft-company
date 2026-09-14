@@ -1,3 +1,6 @@
+// FILE: pages/Products.jsx — Products listing grid (cards link to product detail pages).
+// EDIT HERE TO: change grid/card layout. Product content lives in mock.js (PRODUCTS).
+
 import React from "react";
 import { Link } from "react-router-dom";
 import { CheckCircle2 } from "lucide-react";

@@ -1,3 +1,6 @@
+// FILE: components/Navbar.jsx — Top navigation bar + JCPL logo + mobile menu.
+// EDIT HERE TO: change logo size/shape or nav styling. Menu items live in mock.js (NAV_LINKS).
+
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, ArrowUpRight } from "lucide-react";
@@ -8,7 +11,7 @@ const Logo = () => (
     <img
       src={COMPANY.logo}
       alt="Junctioncraft Pvt. Ltd. (JCPL) logo"
-      className="h-11 w-11 object-contain"
+      className="h-11 w-11 rounded-full object-cover bg-white ring-1 ring-black/5 shadow-sm"
     />
     <div className="leading-none">
       <div className="font-display text-lg font-extrabold tracking-tight text-neutral-900">

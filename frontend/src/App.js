@@ -1,3 +1,7 @@
+// FILE: App.js — App shell: routing + global layout.
+// EDIT HERE TO: add/rename pages & URL routes, or change global wrappers
+// (Navbar, Footer, floating WhatsApp button, toast notifications).
+
 import React from "react";
 import "./App.css";
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";

@@ -1,5 +1,21 @@
-// Mock data for Junctioncraft Pvt. Ltd. — Green Energy EPC
-// NOTE: Content data. Enquiries now persist via backend API.
+// ============================================================================
+// mock.js — ALL WEBSITE CONTENT / DATA IN ONE PLACE (Junctioncraft / JCPL)
+// ----------------------------------------------------------------------------
+// WHERE TO EDIT WHAT:
+//   COMPANY .......... name, email, phone, location, logo, WhatsApp link
+//   NAV_LINKS ........ top navigation menu items
+//   HERO ............. homepage big heading, description, badge, note
+//   STATS ............ the 4 highlight numbers under the hero
+//   MARQUEE .......... the moving green ticker strip words
+//   ABOUT ............ About page text: heading, paragraphs, expertise, pillars
+//   PRODUCTS ......... product cards + product detail pages (specs/features)
+//   SERVICES ......... service cards + service detail pages (scope/process)
+//   PROJECTS ......... the 8 project cards + project detail pages
+//   RENEWABLE ........ solar & wind highlight block
+//   TESTIMONIALS ..... client quotes
+//   CLIENTS .......... "Proudly served" logos/badges
+// NOTE: Changing text here updates it everywhere on the site automatically.
+// ============================================================================
 
 export const COMPANY = {
   name: "Junctioncraft",
@@ -10,7 +26,7 @@ export const COMPANY = {
   email: "jcpl@junctioncraft.in",
   phone: "+91 74113 07097",
   phoneRaw: "917411307097",
-  location: "Bengaluru, Karnataka, India",
+  location: "Vijayapura, Karnataka, India",
   logo: "https://customer-assets-7cd3h4nn.emergentagent.net/job_epc-power-solutions/artifacts/lhlbkh0q_jcpl.webp",
   whatsapp:
     "https://wa.me/917411307097?text=Hello%20Junctioncraft%2C%20I%20would%20like%20to%20discuss%20a%20project.",
@@ -29,21 +45,21 @@ export const HERO = {
   titleLead: "Powering India's",
   titleAccent: "Green Tomorrow.",
   description:
-    "Green-energy EPC for transmission lines, substations up to 110kV, solar evacuation and wind erection — engineered, manufactured and delivered by one accountable team.",
-  note: "Govt.-approved Class-1 Electrical Contractor, Karnataka",
+    "Green-energy EPC for transmission lines, substations up to 765kV, solar evacuation and wind erection — engineered, manufactured and delivered by one accountable team.",
+  note: "Karnataka Government approved contractor",
 };
 
 export const STATS = [
-  { value: "188+", label: "Km of lines executed" },
-  { value: "220kV", label: "Highest line voltage executed" },
-  { value: "Class-1", label: "Electrical Contractor, Karnataka" },
+  { value: "765kV", label: "Highest substation class" },
+  { value: "220kV", label: "Highest transmission line" },
+  { value: "Approved", label: "Karnataka Government approved" },
   { value: "2021", label: "Incorporated, ROC Bangalore" },
 ];
 
 export const MARQUEE = [
   "Substations",
   "Highway Lighting",
-  "Class-1 Contractor",
+  "Govt. Approved",
   "Transmission Lines",
   "Solar EPC",
   "Wind Erection",
@@ -56,11 +72,11 @@ export const ABOUT = {
   paragraphs: [
     "From day one, our philosophy has been simple — one accountable team owns the project from the first survey to final energisation. This end-to-end EPC model removes the finger-pointing between vendors and gives our clients a single point of responsibility for quality, safety and schedule.",
     "We have executed transmission and distribution works from 11kV up to 220kV, unit substations, solar evacuation corridors, wind turbine erection and highway lighting across Karnataka — for utilities like HESCOM and private developers such as Rays Power Infra, Marg Energy, KVGGN Synergy and Hexa Climate.",
-    "As a Government-approved Class-1 Electrical Contractor, every site we run follows strict national electrical and safety standards, with planned shutdown windows that keep utility downtime to a minimum.",
+    "As a Karnataka Government-approved electrical contractor, every site we run follows strict national electrical and safety standards, with planned shutdown windows that keep utility downtime to a minimum.",
   ],
   expertise: [
     { title: "Transmission & Distribution", text: "11kV to 220kV overhead lines — new construction, reconductoring and strengthening." },
-    { title: "Substations", text: "Turnkey 11kV / 33kV / 110kV substations, from civil works to protection and energisation." },
+    { title: "Substations", text: "Turnkey 11kV to 765kV substations, from civil works to protection and energisation." },
     { title: "Renewable Evacuation", text: "Solar pooling substations, evacuation lines and complete wind turbine erection." },
     { title: "Utility & Highway Works", text: "Transformer shifting, Ganga Kalyan works and NHAI-compliant highway lighting." },
   ],
@@ -73,7 +89,7 @@ export const ABOUT = {
     {
       icon: "ShieldCheck",
       title: "Compliance & Safety",
-      text: "Class-1 contractor discipline with strict adherence to national standards on every site.",
+      text: "Government-approved discipline with strict adherence to national standards on every site.",
     },
     {
       icon: "Leaf",
@@ -249,11 +265,11 @@ export const SERVICES = [
     slug: "substations",
     icon: "Building2",
     title: "Substations",
-    desc: "Design, installation and commissioning of 11kV, 33kV and 110kV substations.",
-    long: "Turnkey design, installation and commissioning of 11kV, 33kV and 110kV substations. From civil foundations and structure erection to equipment installation, protection systems and final energisation — handled by a single accountable team.",
+    desc: "Design, installation and commissioning of 11kV to 765kV substations.",
+    long: "Turnkey design, installation and commissioning of 11kV to 765kV substations. From civil foundations and structure erection to equipment installation, protection systems and final energisation — handled by a single accountable team.",
     long2: "Our substation scope covers structure fabrication, gantry erection, installation of transformers, circuit breakers, isolators, CTs/PTs and control & relay panels, along with complete earthing, illumination and cabling. We conduct pre-commissioning tests and coordinate with the utility for charging and takeover.",
     scope: [
-      "11kV, 33kV and 110kV substations",
+      "11kV to 765kV substations",
       "Transformer, breaker and isolator installation",
       "Protection, control & relay panels",
       "Bus-bar, gantry and structure erection",

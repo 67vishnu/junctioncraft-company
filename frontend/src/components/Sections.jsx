@@ -1,3 +1,7 @@
+// FILE: components/Sections.jsx — Reusable shared blocks used across pages:
+// Eyebrow (small label), Marquee (green ticker), ClientsStrip (Proudly served),
+// Testimonials, CtaBand (green call-to-action). EDIT layout/styling here; text/data in mock.js.
+
 import React from "react";
 import { Link } from "react-router-dom";
 import { ArrowUpRight, Quote } from "lucide-react";

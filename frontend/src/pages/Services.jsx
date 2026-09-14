@@ -1,3 +1,6 @@
+// FILE: pages/Services.jsx — Services listing grid + renewable band (cards link to detail).
+// EDIT HERE TO: change layout. Service content lives in mock.js (SERVICES).
+
 import React from "react";
 import { Link } from "react-router-dom";
 import {

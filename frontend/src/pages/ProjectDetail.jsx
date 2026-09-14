@@ -1,3 +1,6 @@
+// FILE: pages/ProjectDetail.jsx — Single project page: overview, challenge, outcome,
+// highlights + key facts sidebar. Content from mock.js (PROJECTS by id).
+
 import React from "react";
 import { useParams, Link } from "react-router-dom";
 import { ArrowLeft, ArrowUpRight, MapPin, Zap, Ruler, Building2 } from "lucide-react";

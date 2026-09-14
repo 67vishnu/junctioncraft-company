@@ -1,3 +1,7 @@
+// FILE: pages/Home.jsx — Homepage: hero (with animated wind turbines), stats, marquee,
+// about preview, products, services, renewable, projects, testimonials, clients, CTA.
+// EDIT HERE TO: reorder homepage sections. All text/data lives in mock.js.
+
 import React from "react";
 import { Link } from "react-router-dom";
 import {

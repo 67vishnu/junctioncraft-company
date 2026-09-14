@@ -1,3 +1,7 @@
+// FILE: pages/About.jsx — About page: story, mission/vision, expertise, stats, timeline.
+// EDIT HERE TO: change the `timeline` and `commitments` arrays (top of file).
+// Main About text/paragraphs/expertise live in mock.js (ABOUT).
+
 import React from "react";
 import { Link } from "react-router-dom";
 import {
@@ -19,7 +23,7 @@ const ICONS = { Workflow, ShieldCheck, Leaf };
 
 const timeline = [
   { year: "2021", text: "Junctioncraft Pvt. Ltd. incorporated on March 12, registered with ROC Bangalore." },
-  { year: "2022", text: "Secured Class-1 Electrical Contractor approval in Karnataka." },
+  { year: "2022", text: "Secured Karnataka Government approval as an electrical contractor." },
   { year: "2023", text: "Executed multi-kilometre 11kV and 33kV strengthening works for HESCOM." },
   { year: "2024", text: "Delivered 110kV & 220kV transmission lines and solar evacuation corridors." },
 ];
@@ -186,10 +190,10 @@ const About = () => {
               <Award className="h-8 w-8 text-primary" />
               <div>
                 <div className="font-semibold text-neutral-900">
-                  Class-1 Electrical Contractor
+                  Karnataka Government Approved
                 </div>
                 <div className="text-sm text-neutral-500">
-                  Government-approved, Karnataka
+                  Approved electrical contractor, Karnataka
                 </div>
               </div>
             </div>

@@ -1,3 +1,6 @@
+// FILE: pages/Projects.jsx — Projects listing with category filter (cards link to detail).
+// EDIT HERE TO: change filter categories/layout. The 8 projects live in mock.js (PROJECTS).
+
 import React, { useState, useMemo } from "react";
 import { Link } from "react-router-dom";
 import { MapPin, Zap, Ruler } from "lucide-react";
